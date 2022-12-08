@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "Gamer";
+    src: url(debug-font/DebugFreeTrial-MVdYB.otf);
+}
+
+@font-face {
+    font-family: "Gamer2";
+    src: url(plaguard-font/Plaguard-ZVnjx.otf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.627),rgba(0, 0, 0, 0.6)) , url(images/back2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* HEADING AREA */
+/* HEADING AREA */
+/* HEADING AREA */
+
+
+.heading-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+
+
+.main-heading h1 {
+    font-family: "Gamer2";
+    color: rgb(251, 255, 255);
+    font-size: 70px;
+}
+
+
+/* OPTION BUTTONS AREA */
+/* OPTION BUTTONS AREA */
+/* OPTION BUTTONS AREA */
+
+.options-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.options-area button {
+    width: 150px;
+    height: 70px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 30px;
+    font-family: "Gamer2";
+    border: none;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.options-area button:hover {
+    cursor: pointer;
+    scale: 1.2;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+    transition: 0.5s;
+}
+
+.grid-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 70px;
+}
+
+.slider-move {
+    -webkit-appearance: none;  
+    background: black; 
+    border-radius: 20px;
+    outline: none; 
+}
+
+.slider-move::-moz-range-thumb {
+    color: white;
+}
+
+.grid-value p {
+    color: white;
+    margin: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 25px;
+} 
+
+
+/* GRID PLAYGROUND */
+/* GRID PLAYGROUND */
+/* GRID PLAYGROUND */
+
+.gaming-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.grid-playground {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.grid-playground div {
+    border: 1px solid red;
+}
+
+
+
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+
+.logo img {
+    width: 130px;
+}
