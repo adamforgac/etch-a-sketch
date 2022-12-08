@@ -37,6 +37,34 @@ function resetGrid() {
 }
 
 
+// LET THE PLAYER CHOOSE HIS OWN GRID
+
+
+slider.addEventListener("click", createCustomGrid)
+
+function createCustomGrid() {
+    resetGrid()
+
+    currentValue = slider.value
+    
+    for(let i = 0; i <= currentValue*currentValue-1; i++) {
+        const customCell = document.createElement("div");
+        container.appendChild(customCell);
+        container.style["grid-template-columns"] = `repeat(${currentValue}, 1fr)`;
+        container.style["grid-template-rows"] = `repeat(${currentValue}, 1fr)`;
+    }
+
+    const allCells = document.querySelectorAll(".grid-playground div");
+
+    allCells.forEach(item => {
+        item.addEventListener('mouseover', event => {
+          item.style.backgroundColor = "black"
+        })
+    })
+
+    const slideInfo = document.querySelector("#grid-value-text")
+    slideInfo.textContent = `${currentValue} x ${currentValue}`
+}
 
 
 
