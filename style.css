@@ -75,6 +75,35 @@ body {
     transition: 0.5s;
 }
 
+.color-choice-button  {
+    width: 150px;
+    height: 70px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 30px;
+    font-family: "Gamer2";
+    border: none;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.color-choice-button input {
+    height: 15px;
+    outline: none;
+    border-radius: 20px; 
+    width: 80px; 
+}
+
+.color-choice-button input:hover {
+    cursor: pointer;
+}
+
 .options-area button:hover {
     cursor: pointer;
     scale: 1.2;
