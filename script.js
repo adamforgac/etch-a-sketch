@@ -134,6 +134,16 @@ function createCustomGrid() {
     }
 
 
+    rainbow.addEventListener("click", createRainbow)
+
+    function createRainbow() {
+        allCells.forEach(item => {
+            item.addEventListener('mouseover', event => {
+                item.style.backgroundColor = rainbowColors[randomColor()]
+            })
+        })
+    }
+
     const slideInfo = document.querySelector("#grid-value-text")
     slideInfo.textContent = `${currentValue} x ${currentValue}`
 }
@@ -172,6 +182,50 @@ function eraseGrid() {
         })
     })
 }
+
+
+// RAINBOW MODE
+
+const rainbow = document.querySelector("#rainbow");
+const rainbowColors = ["red", "orange", "yellow", "green", "blue", "indigo", "orange", "pink", "purple", "brown", "salmon", "tomato", "khaki", "lime", "olive", "teal", "aqua", "cyan", "navy"];
+
+function randomColor() {
+    let randomPicker = (Math.floor(Math.random() * rainbowColors.length)) 
+    return randomPicker
+}
+
+rainbow.addEventListener("click", createRainbow)
+
+function createRainbow() {
+    allCells.forEach(item => {
+        item.addEventListener('mouseover', event => {
+          item.style.backgroundColor = rainbowColors[randomColor()]
+        })
+    })
+}
+
+
+// CHANGE GRID SIZE
+// CHANGE GRID SIZE
+// CHANGE GRID SIZE
+
+
+const zoomer = document.querySelector(".screen-size");
+zoomer.addEventListener("click", zoomIt);
+
+function zoomIt() {
+    container.classList.toggle("grid-full")
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

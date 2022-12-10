@@ -158,11 +158,38 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
+    transition: 1s;
 }
 
-.grid-playground div {
-
+.grid-playground.grid-full {
+    width: 650px;
+    height: 650px;
+    transition: 1s;
 }
+
+
+/* SCREEN SIZE */
+/* SCREEN SIZE */
+/* SCREEN SIZE */
+
+
+.screen-size {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen-size i {
+    color: white;
+    font-size: 50px;
+}
+
+.screen-size i:hover {
+    cursor: pointer;
+}
+
+
+
 
 
 
