@@ -26,9 +26,11 @@ body {
 }
 
 
+
 /* HEADING AREA */
 /* HEADING AREA */
 /* HEADING AREA */
+
 
 
 .heading-area {
@@ -40,8 +42,6 @@ body {
     margin-top: 15px;
 }
 
-
-
 .main-heading h1 {
     font-family: "Gamer2";
     color: rgb(251, 255, 255);
@@ -49,9 +49,12 @@ body {
 }
 
 
+
 /* OPTION BUTTONS AREA */
 /* OPTION BUTTONS AREA */
 /* OPTION BUTTONS AREA */
+
+
 
 .options-area {
     display: flex;
@@ -73,6 +76,14 @@ body {
     background-color: black;
     color: white;
     transition: 0.5s;
+}
+
+.rainbow-mode-button button:focus {
+    border: 2px solid rgb(31, 129, 181);
+}
+
+.eraser-button button:focus {
+    border: 2px solid rgb(31, 129, 181);
 }
 
 .color-choice-button  {
@@ -139,9 +150,28 @@ body {
 } 
 
 
+/* BUTTON SMALLER DEVICES LAYOUT */
+
+
+.color-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cleaning-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 /* GRID PLAYGROUND */
 /* GRID PLAYGROUND */
 /* GRID PLAYGROUND */
+
+
 
 .gaming-area {
     display: flex;
@@ -168,9 +198,11 @@ body {
 }
 
 
+
 /* SCREEN SIZE */
 /* SCREEN SIZE */
 /* SCREEN SIZE */
+
 
 
 .screen-size {
@@ -188,14 +220,32 @@ body {
     cursor: pointer;
 }
 
+.minus {
+    display: none;
+    transition: 0.5s;
+}
 
+.minus.visible {
+    display: unset;
+    transition: 0.5s;
+}
 
+.plus {
+    display: unset;
+    transition: 0.5s;
+}
+
+.plus.invisible {
+    display: none;
+    transition: 0.5s;
+}
 
 
 
 /* FOOTER */
 /* FOOTER */
 /* FOOTER */
+
 
 
 .footer {

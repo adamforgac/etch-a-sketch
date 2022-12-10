@@ -1,0 +1,192 @@
+@media only screen and (max-width: 970px) {
+    .options-area button {
+        width: 110px;
+        font-size: 16px;
+        height: 60px;
+        margin: 30px 15px 30px 15px;
+    }
+
+    .color-choice-button {
+        width: 100px;
+        height: 60px;
+    }
+
+    .color-choice-button input {
+        width: 50px;
+    }
+
+    .color-choice-button label {
+        font-size: 16px;
+    } 
+
+    .grid-value p {
+        margin: 7px;
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 715px) {
+    .color-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cleaning-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .color-choice-button {
+        width: 110px;
+    } 
+
+    .grid-playground {
+        width: 360px;
+        height: 360px;
+    }
+
+    .grid-playground.grid-full {
+        width: 420px;
+        height: 420px;
+    }
+
+    .main-heading h1 {
+        font-size: 35px;
+    }  
+} 
+
+
+@media only screen and (max-width: 444px) {
+    .grid-playground {
+        width: 300px;
+        height: 300px;
+        margin: 0;
+    }
+
+    .grid-playground.grid-full {
+        width: 330px;
+        height: 330px;
+        margin: 0;
+    }
+
+    .options-area button {
+        width: 90px;
+        font-size: 13px;
+        height: 50px;
+        margin: 20px;
+    }
+
+    .color-choice-button {
+        width: 90px;
+        height: 50px;
+        margin: 20px;
+    }
+
+    .color-choice-button input {
+        width: 45px;
+    }
+
+    .screen-size i {
+        font-size: 40px;
+    }
+
+    .color-choice-button label {
+        font-size: 13px;
+    } 
+
+    .grid-value p {
+        font-size: 20px;
+    }
+
+    .slider-move {
+        width: 100px;
+        height: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 360px) {
+    .grid-playground {
+        width: 220px;
+        height: 220px;
+        margin: 0;
+    }
+
+    .grid-playground.grid-full {
+        width: 270px;
+        height: 270px;
+        margin: 0;
+    }
+
+    .cleaning-wrapper {
+        margin-right: 5px;
+        margin-left: 0px;
+    }
+
+    .color-wrapper {
+        margin-left: 5px;
+        margin-right: 0px;
+    }
+
+    .options-area button {
+        width: 60px;
+        font-size: 10px;
+        height: 45px;
+        margin: 10px;
+    }
+
+    .color-choice-button {
+        width: 60px;
+        height: 45px;
+        margin: 10px;
+    }
+
+    .color-choice-button input {
+        width: 30px;
+    }
+
+    .screen-size i {
+        font-size: 35px;
+    }
+
+    .color-choice-button label {
+        font-size: 10px;
+    } 
+
+    .grid-value p {
+        font-size: 16px;
+    }
+
+    .slider-move {
+        width: 70px;
+        height: 15px;
+    }
+
+    .main-heading h1 {
+        font-size: 27px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+}
+
+
+@media only screen and (max-width: 285px) {
+    .grid-playground {
+        width: 190px;
+        height: 190px;
+        margin: 0;
+    }
+
+    .grid-playground.grid-full {
+        width: 210px;
+        height: 210px;
+        margin: 0;
+    }
+
+    .main-heading h1 {
+        font-size: 23px;
+    }
+} 

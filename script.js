@@ -14,13 +14,14 @@ for(let i = 0; i <=  63; i++) {
 }
 
 
+
 // CHANGE THE GRID COLOR IF HOVERING
 // CHANGE THE GRID COLOR IF HOVERING
 // CHANGE THE GRID COLOR IF HOVERING
+
 
 
 const allCells = document.querySelectorAll(".grid-playground div");
-
 
 allCells.forEach(item => {
     item.addEventListener('mouseover', event => {
@@ -29,26 +30,32 @@ allCells.forEach(item => {
 })
 
 
+
 // REMOVE THE GRID
 // REMOVE THE GRID
 // REMOVE THE GRID 
 
 
+
 function resetGrid() {
-    let allDivs = document.querySelectorAll(".grid-playground div")
+    const allDivs = document.querySelectorAll(".grid-playground div")
     allDivs.forEach(item => {
         container.removeChild(item)
     })
 }
 
 
+
 // CLEAR THE GRID
 // CLEAR THE GRID
 // CLEAR THE GRID
+
 
 
 const cleanButton = document.querySelector("#cleaner")
+
 cleanButton.addEventListener("click", cleaner)
+
 function cleaner() {
     allCells.forEach(item => {
         item.style.backgroundColor = "white";
@@ -62,9 +69,11 @@ function cleaner() {
 }
 
 
+
 // LET THE PLAYER CHOOSE HIS OWN GRID
 // LET THE PLAYER CHOOSE HIS OWN GRID
 // LET THE PLAYER CHOOSE HIS OWN GRID
+
 
 
 slider.addEventListener("input", createCustomGrid)
@@ -84,6 +93,9 @@ function createCustomGrid() {
     }
 
 
+    // CORRECT COLOR
+
+
     const allCells = document.querySelectorAll(".grid-playground div");
 
     allCells.forEach(item => {
@@ -91,7 +103,6 @@ function createCustomGrid() {
           item.style.backgroundColor = currentColor
         })
     })
-
 
     palette.addEventListener("input", changeColor);
 
@@ -106,8 +117,13 @@ function createCustomGrid() {
     }
 
 
+    // CLEAN BUTTON 
+
+
     const cleanButton = document.querySelector("#cleaner")
+
     cleanButton.addEventListener("click", cleaner)
+
     function cleaner() {
         let currentColor = palette.value
 
@@ -123,6 +139,9 @@ function createCustomGrid() {
     }
 
 
+    // ERASER BUTTON
+
+
     eraser.addEventListener("click", eraseGrid)
 
     function eraseGrid() {
@@ -132,6 +151,9 @@ function createCustomGrid() {
             })
         })
     }
+
+
+    // RAINBOW BUTTON
 
 
     rainbow.addEventListener("click", createRainbow)
@@ -212,9 +234,13 @@ function createRainbow() {
 
 const zoomer = document.querySelector(".screen-size");
 zoomer.addEventListener("click", zoomIt);
+const plus = document.querySelector(".plus");
+const minus = document.querySelector(".minus");
 
 function zoomIt() {
-    container.classList.toggle("grid-full")
+    container.classList.toggle("grid-full");
+    minus.classList.toggle("visible");
+    plus.classList.toggle("invisible");
 }
 
 
